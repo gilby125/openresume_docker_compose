@@ -5,7 +5,7 @@ FROM node:14
 WORKDIR /app
 
 # Clone the repository and set the working directory
-RUN git clone https://github.com/xitanggg/open-resume.git . && cd open-resume
+RUN git clone https://github.com/xitanggg/open-resume.git . && cd  openresume_docker_compose
 
 # Install dependencies
 RUN npm install
