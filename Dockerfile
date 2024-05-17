@@ -4,8 +4,8 @@ FROM node:14
 # Set the working directory in the container
 WORKDIR /app
 
-# Clone the repository
-RUN git clone https://github.com/xitanggg/open-resume.git .
+# Clone the repository and set the working directory
+RUN git clone https://github.com/xitanggg/open-resume.git . && cd open-resume
 
 # Install dependencies
 RUN npm install
